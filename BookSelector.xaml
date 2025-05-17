@@ -1,0 +1,16 @@
+﻿<Window x:Class="Библиотека.BookSelector"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Библиотека"
+        mc:Ignorable="d"
+        Title="BookSelector" Height="450" Width="800">
+    <DockPanel>
+        <Button DockPanel.Dock="Bottom" Content="Выбрать" Click="Button_Click"></Button>
+        <ListBox Name="List" ItemsSource="{Binding GetFreeBooks}">
+
+        </ListBox>
+        
+    </DockPanel>
+</Window>
